@@ -9,7 +9,7 @@ export class NewsSearchService {
   constructor(private http: Http) { }
 
 searchNewsMain( ){
-  	return this.http.get(' https://newsapi.org/v1/sources?language=en')
+  	return this.http.get('https://newsapi.org/v1/sources?language=en')
   	.map(res=>res.json()
   		);
   }

@@ -2,26 +2,22 @@
 <html>
 <div class="container">
   <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="#">News</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">News <span class="sr-only"></span></a>
+          <a class="nav-link" href="#">Favorites <span class="sr-only"></span></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Favorites</a>
-        </li>
+        
         <li class="nav-item">
           <a class="nav-link disabled" href="#"></a>
         </li>
       </ul>
-   <select name="search"#searchTerm>
-          <option *ngFor="let news of post" #name [value]="news.id">
-            {{news.name}}
-          </option>
+        <select name="search"#searchTerm>
+          <option *ngFor="let news of post" #name [value]="news.id">{{news.name}}</option>
         </select>
         <a class="btn btn-sm btn-info btn-outline-success my-2 my-sm-0" (click)="searchNews(searchTerm)">Search</a>
 
@@ -31,23 +27,7 @@
  <h1 class="jumbotron">News Nation</h1>
   <h2>Search your news</h2>
   <br>
-  <div class="container">
-    <div class="card-group">
-      <div class="card cardsize">
-        <div class="row">
-          <div class='col-md-4' *ngFor="let news of news">
-            <img class="card-img-top cardimg" src="{{news.urlToImage}}" alt="No image"/>
-            <div class="card-body">
-              <h4 class="card-title"> <a href="{{news.url}}" target="blank">{{news.title}}</a></h4>
-              <p class="card-text">{{news.description}}</p>
-              <a href="#" class="btn btn-primary">Add</a>
-            </div>
-            <div class="card-footer text-muted">{{news.publishedAt}}</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  
 </div>
 
 </html>
