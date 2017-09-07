@@ -3,12 +3,14 @@ import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { SearchComponent } from './search/search.component';
-import { NewsSearchService } from './service/news-search.service'
+import { NewsSearchService } from './service/news-search.service';
+import { SearchlistComponent } from './searchlist/searchlist.component'
 
 @NgModule({
   declarations: [
     AppComponent,
-    SearchComponent
+    SearchComponent,
+    SearchlistComponent
   ],
   imports: [
     BrowserModule,
