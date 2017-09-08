@@ -5,13 +5,15 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { SearchComponent } from './search/search.component';
 import { NewsSearchService } from './service/news-search.service';
-import { SearchlistComponent } from './searchlist/searchlist.component'
+import { SearchlistComponent } from './searchlist/searchlist.component';
+import { FavoriteComponent } from './favorite/favorite.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchComponent,
-    SearchlistComponent
+    SearchlistComponent,
+    FavoriteComponent
   ],
   imports: [
     BrowserModule,

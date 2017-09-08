@@ -19,4 +19,20 @@ searchNewsMain( ){
   	.map(res=>res.json());
   }
   	
+    add(fav) {
+      console.log(fav)
+      return this.http.post('http://localhost:3000/employee',fav)
+      .map(res=>res.json());
+    }
+
+    favorite() {
+      return this.http.get('http://localhost:3000/employee')
+      .map(res=>res.json());
+    }
+
+    delete(data: any) {
+      console.log(data)
+      return this.http.delete('http://localhost:3000/employee/'+data._id)
+      .map(res =>res.json())
+    }
 }

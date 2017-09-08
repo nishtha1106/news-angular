@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent{
    constructor() {}
+   
   news:any;
   onEmit(s:any) {
   	this.news=s;
